@@ -20,7 +20,7 @@
     }
 
   dependencies {
-		implementation 'com.github.gyadministrator:LocalLocation:1.0'
+		implementation 'com.github.gyadministrator:LocalLocation:1.1'
 	}
 
 本篇主要介绍谷歌自带的LocationManager 获取手机定位的方法，以及通过谷歌服务Geocoder 来进行反地理编码。接口api都比较简单，细节可以查看代码。
