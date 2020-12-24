@@ -45,9 +45,15 @@ public class LocationActivity extends AppCompatActivity {
                 String s = sharedPreferences.getString(LocationService.LOCATION_TAG, "");
                 Log.e("result", "run: " + s);
                 if (!TextUtils.isEmpty(s)) {
-                    Latlng latlng = new Gson().fromJson(s, Latlng.class);
+                    final Latlng latlng = new Gson().fromJson(s, Latlng.class);
                     if (latlng != null) {
-                        tvSimpleAd.setText(latlng.toString());
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                tvSimpleAd.setText(latlng.toString());
+                                timer.cancel();
+                            }
+                        });
                     }
                 }
             }
