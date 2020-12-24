@@ -1,2 +1,2 @@
-include ':simplelocationdemo', ':simplelocation'
+include ':simplelocationdemo', ':locationlib'
 rootProject.name = "LocalLocation"

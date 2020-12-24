@@ -11,10 +11,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.custom.locationlib.bean.Latlng;
+import com.android.custom.locationlib.service.LocationService;
+import com.android.custom.locationlib.util.LocationUtil;
 import com.google.gson.Gson;
-import com.mjzuo.location.bean.Latlng;
-import com.mjzuo.location.service.LocationService;
-import com.mjzuo.location.util.LocationUtil;
 
 import java.util.Timer;
 import java.util.TimerTask;
